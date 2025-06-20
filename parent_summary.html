@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Child Summary</title>
+  <link rel="icon" type="image/png" href="images/bimbing-logo.png" />
+  <link rel="stylesheet" href="parent_summary.css" />
+</head>
+<body>
+  <div class="student-profile">
+  <img id="studentPhoto" class="student-img" alt="Student Photo" />
+  <h1 id="studentName"></h1>
+  <h2 id="studentId"></h2>
+  <h2 id="studentClass" class="student-class"></h2>
+</div>
+
+
+    <div class="card">
+      <h3>Literacy Scores</h3>
+      <ul class="scores">
+        <li><strong>Reading:</strong> <span id="reading"></span>%</li>
+        <li><strong>Writing:</strong> <span id="writing"></span>%</li>
+        <li><strong>Listening:</strong> <span id="listening"></span>%</li>
+        <li><strong>Speaking:</strong> <span id="speaking"></span>%</li>
+      </ul>
+
+      <h3>TP Level</h3>
+      <p id="tpLevel"></p>
+
+      <h3>Teacher's Comment</h3>
+      <p id="comment"></p>
+    </div>
+  </div>
+
+  <div id="toast" class="toast"></div>
+  <script src="parent_summary.js"></script>
+</body>
+</html>

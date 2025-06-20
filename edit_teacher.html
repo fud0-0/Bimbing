@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Edit Teacher Profile</title>
+  <link rel="icon" type="image/png" href="images/bimbing-logo.png" />
+  <link rel="stylesheet" href="edit_teacher.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 id="teacherName"></h1>
+    <h2 id="teacherId"></h2>
+
+    <div class="form-card">
+      <label>Username</label>
+      <input type="text" id="username" />
+
+      <label>Password</label>
+      <input type="text" id="password" />
+
+      <button onclick="saveTeacherEdits()">Save</button>
+      <a href="admin_dashboard.html" class="back-btn">← Back to Dashboard</a>
+    </div>
+  </div>
+
+  <div id="toast" class="toast"></div>
+  <script src="edit_teacher.js"></script>
+</body>
+</html>

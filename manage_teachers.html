@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manage Teacher Profiles</title>
+  <link rel="icon" type="image/png" href="images/bimbing-logo.png" />
+  <link rel="stylesheet" href="manage_teachers.css" />
+</head>
+<body>
+  <div class="header">
+    <h1>Manage Teacher Profiles</h1>
+    <button class="back-btn" onclick="window.location.href='admin_dashboard.html'">← Back to Dashboard</button>
+  </div>
+
+  <div class="container">
+    <button class="add-btn" onclick="openModal()">➕ Add Teacher Profile</button>
+
+    <ul id="teacherList" class="profile-list"></ul>
+  </div>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2>Add Teacher Profile</h2>
+      <label>Name</label>
+      <input type="text" id="name" />
+
+      <label>ID</label>
+      <input type="number" id="id" />
+
+      <label>Username</label>
+      <input type="text" id="username" />
+
+      <label>Password</label>
+      <input type="text" id="password" />
+
+      <button onclick="saveTeacher()">Save</button>
+    </div>
+  </div>
+
+  <div id="toast" class="toast"></div>
+  <script src="manage_teachers.js"></script>
+</body>
+</html>

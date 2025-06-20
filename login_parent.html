@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parent Login</title>
+  <link rel="icon" type="image/png" href="images/bimbing-logo.png">
+  <link rel="stylesheet" href="parent_login.css">
+</head>
+<body>
+  <main>
+    <h1>Parent Login</h1>
+    <form onsubmit="handleParentLogin(event)">
+      <label for="accessCode">Access Code</label>
+      <input type="text" id="accessCode" required />
+      <button type="submit">Login</button>
+    </form>
+    <a href="index.html" class="back-btn">← Back to Home</a>
+    <div id="toast" class="toast"></div>
+  </main>
+  <script src="parent_login.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Login - Bimbing</title>
+  <link rel="icon" type="image/png" href="images/bimbing-logo.png">
+  <link rel="stylesheet" href="admin_login.css">
+</head>
+<body>
+  <main>
+    <h1>Admin Login</h1>
+    <form onsubmit="handleAdminLogin(event)">
+      <label for="password">Password</label>
+      <input type="password" id="password" required>
+      <button type="submit">Login</button>
+    </form>
+    <div id="toast" class="toast"></div>
+    <a href="index.html" class="back-btn">← Back to Home</a>
+
+  </main>
+  <script src="admin_login.js"></script>
+</body>
+</html>

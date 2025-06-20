@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manage Results</title>
+  <link rel="stylesheet" href="upload_results.css">
+  <link rel="icon" type="image/png" href="images/bimbing-logo.png" />
+
+</head>
+<body>
+  <div class="student-profile">
+  <img id="studentPhoto" class="student-img" alt="Student Photo" />
+  <h1 id="studentName"></h1>
+  <h2 id="studentId"></h2>
+  <h2 id="studentClass" class="student-class"></h2>
+</div>
+
+    <div class="form-card">
+      <h3>Manage Literacy Scores (%)</h3>
+      <div class="scores">
+        <div>
+          <label>Reading</label>
+          <input type="number" step="0.1" id="reading">
+        </div>
+        <div>
+          <label>Writing</label>
+          <input type="number" step="0.1" id="writing">
+        </div>
+        <div>
+          <label>Listening</label>
+          <input type="number" step="0.1" id="listening">
+        </div>
+        <div>
+          <label>Speaking</label>
+          <input type="number" step="0.1" id="speaking">
+        </div>
+      </div>
+
+      <label class="section-title">Upload TP Level</label>
+      <input type="number" id="tpLevel">
+
+      <label class="section-title">Upload Comments</label>
+      <textarea id="comment" rows="5"></textarea>
+
+      <button onclick="saveResults()">Submit</button>
+      <p id="confirmation" style="color: green;"></p>
+    </div>
+  </div>
+  <script src="upload_results.js"></script>
+  <div id="toast" class="toast"></div>
+  <a href="teacher_dashboard.html" class="back-btn">← Back to Dashboard</a>
+</body>
+</html>

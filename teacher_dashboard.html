@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Teacher Dashboard</title>
+  <link rel="stylesheet" href="teacher_dashboard.css" />
+  <link rel="icon" type="image/png" href="images/bimbing-logo.png" />
+
+</head>
+<body>
+  <div class="header">
+    <h1>ㅤㅤㅤTeacher Dashboard</h1>
+    <button class="logout-btn" onclick="logout()">Logout</button>
+  </div>
+  <p id="greeting">Hi.</p>
+
+  <div class="dashboard">
+    <div class="card">
+      <h2>Manage Literacy Results</h2>
+      <div class="search-box">
+        <input type="text" placeholder="Search student by ID" onkeyup="showDropdown(this, 'upload')" />
+        <div class="dropdown" id="dropdown-upload"></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>View Student Progress</h2>
+      <div class="search-box">
+        <input type="text" placeholder="Search student by ID" onkeyup="showDropdown(this, 'progress')" />
+        <div class="dropdown" id="dropdown-progress"></div>
+      </div>
+    </div>
+  </div>
+
+<script src="init_data.js"></script>
+<script src="teacher_dashboard.js"></script>
+
+</body>
+</html>
