@@ -8,14 +8,7 @@ function renderStudentList() {
   container.innerHTML = "";
   const students = JSON.parse(localStorage.getItem("students")) || [];
 
-  students.forEach((s, index) => {
-    const card = document.createElement("div");
-    card.className = "student-card";
-    card.innerHTML = `
-      ${s.photo ? `<img src="${s.photo}" class="student-img">` : ""}
-      <h3>${s.name}</h3>
-      <p>ID: ${s.id}</p>
-      <p>Class: ${s.class || "-"}</p>
+
       
       <button onclick="deleteStudent(${index})">Delete</button>
     `;
