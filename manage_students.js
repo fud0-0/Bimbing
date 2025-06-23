@@ -16,7 +16,7 @@ function renderStudentList() {
       <h3>${s.name}</h3>
       <p>ID: ${s.id}</p>
       <p>Class: ${s.class || "-"}</p>
-      <button onclick="editStudent(${index})">Edit</button>
+      
       <button onclick="deleteStudent(${index})">Delete</button>
     `;
     container.appendChild(card);
