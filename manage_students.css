@@ -172,3 +172,18 @@ h1 {
   margin-right: auto;
 }
 
+.student-card button {
+  padding: 8px 14px;
+  margin-top: 10px;
+  border: 1px solid #ff6b6b;
+  background-color: #ffe1e1;
+  color: #a50000;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.95em;
+  transition: background-color 0.3s ease;
+}
+
+.student-card button:hover {
+  background-color: #ffcccc;
+}
