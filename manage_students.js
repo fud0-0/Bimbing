@@ -7,7 +7,14 @@ function renderStudentList() {
   const container = document.getElementById("studentList");
   container.innerHTML = "";
   const students = JSON.parse(localStorage.getItem("students")) || [];
-
+students.forEach((s, index) => {
+    const card = document.createElement("div");
+    card.className = "student-card";
+    card.innerHTML = `
+      ${s.photo ? `<img src="${s.photo}" class="student-img">` : ""}
+      <h3>${s.name}</h3>
+      <p>ID: ${s.id}</p>
+      <p>Class: ${s.class || "-"}</p>
 
       
       <button onclick="deleteStudent(${index})">Delete</button>
@@ -81,18 +88,7 @@ function saveStudent() {
   }
 }
 
-function editStudent(index) {
-  const students = JSON.parse(localStorage.getItem("students")) || [];
-  const student = students[index];
 
-  document.getElementById("modalTitle").textContent = "Edit Student";
-  document.getElementById("studentName").value = student.name;
-  document.getElementById("studentId").value = student.id;
-  document.getElementById("studentClass").value = student.class || "";
-  document.getElementById("studentPhoto").value = "";
-  document.getElementById("modal").dataset.index = index;
-  document.getElementById("modal").style.display = "block";
-}
 
 function deleteStudent(index) {
   if (!confirm("Are you sure you want to delete this student?")) return;
